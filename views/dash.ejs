@@ -1,0 +1,16 @@
+<h1 class="mt-4 text-center">Mean Median Mode</h1>
+<p class="lead mb-3">Welcome <%= name %></p>
+
+
+
+<form action="/dashboard" method="POST">
+    <label for="">Enter Number :</label>
+    <input placeholder="Eg :1 2 3 4 10 11 " name="num" value="<%= typeof num != 'undefined' ? num : '' %>" id="num" class="form-control py-1" /> 
+    <br>
+    <button type="submit" class="btn btn-danger">calculate</button>
+</form>
+
+
+
+<hr>
+<a href="/auth/logout" class="btn btn-secondary">Logout</a>
